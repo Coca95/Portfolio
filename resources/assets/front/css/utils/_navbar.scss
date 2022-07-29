@@ -1,0 +1,126 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color1);
+    //opacity: 0.5;
+    height: 10vh;
+    //border: 0.5px rgba($color: red, $alpha: 0.5) solid;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+.ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1.5rem 0rem;
+    color: var(--color2);
+}
+
+.li {
+    margin: 0rem 2rem;
+}
+
+.theme {
+    margin: 0rem 1rem;
+    padding-left: 5rem;
+}
+
+.darkThemeicon {
+    width: 35px;
+}
+
+.hamburger {
+    position: absolute;
+    display: flex;
+    right: 1.5rem;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 17px;
+    display: none;
+}
+
+.bar {
+    height: 2px;
+    width: 100%;
+    background-color: var(--color3);
+    border-radius: 10px;
+    transition: 0.3s all;
+}
+
+.list-link {
+    text-transform: uppercase;
+    padding: 8px 10px;
+    text-decoration: none;
+    color: var(--white);
+}
+
+.list-link:hover {
+    text-decoration: underline var(--color3) 3px;
+    transition: 0.3s ease;
+    color: var(--white);
+}
+
+@media(max-width: 768px) {
+    body {
+        overflow: hidden;
+    }
+
+    .hamburger {
+        display: flex;
+        cursor: pointer;
+    }
+
+    .ul {
+        position: absolute;
+        flex-direction: column;
+        top: 10vh;
+        right: -100%;
+        background-color: var(--white);
+        opacity: 0.7;
+        height: 90vh;
+        width: 100%;
+        align-items: center;
+        transition: right 0.5s ease-in-out;
+    }
+
+    .li {
+        margin-right: 0px;
+        font-size: 30px;
+    }
+
+    .list-link {
+        text-transform: uppercase;
+        padding: 8px 10px;
+        text-decoration: none;
+        color: var(--color1);
+    }
+
+    .list-link:hover {
+        text-decoration: underline var(--color3) 3px;
+        transition: 0.3s ease;
+        color: var(--color1);
+    }
+
+    .menu-slide {
+        right: 0%;
+        transition: right 0.5s ease-in-out;
+    }
+
+    .cross .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .cross .bar:first-child {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .cross .bar:last-child {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+}

@@ -1,0 +1,115 @@
+.--skills {
+    height: 110vh;
+    background-color: var(--color2);
+    color: var(--black);
+}
+
+.sectionp2 {
+    display: flex;
+    width: 100%;
+
+    &__text {
+        flex: 1 1 0;
+        margin: 1.5rem;
+        text-align: justify;
+        line-height: 1.5;
+        padding: 1rem;
+    }
+
+    &__text p {
+        margin-top: 1rem;
+        padding: 1.5rem 1rem 0 1rem;
+    }
+
+    &__img {
+        flex: 1 1 0;
+        margin: 1.5rem;
+        padding-bottom: 2rem;
+    }
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__title {
+        color: var(--color3);
+    }
+}
+
+.link {
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--color3);
+}
+
+.img {
+    width: 50%;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 110% 110% 110%;
+    gap: 0.6rem;
+    grid-template-areas: "Photo-1 Photo-2"
+        "Photo-3 Photo-4"
+        "Photo-5 Photo-6";
+    justify-items: center;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+
+
+//-------------------------------------------------------------------
+
+@media (max-width: 1199.98px) {
+    .container {
+        grid-template-rows: 75% 75% 75%;
+    }
+}
+
+@media screen and (max-width: 991.98px) {
+    .--skills {
+        height: 150vh;
+    }
+
+    .sectionp2 {
+        &__text {
+            margin: 0;
+            padding: 1rem;
+        }
+    }
+
+    .container {
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 200% 200% 200%;
+    }
+}
+
+@media screen and (max-width: 767.98px) {
+    .--skills {
+        height: 130vh;
+    }
+}
+
+@media screen and (max-width: 575.98px) {
+    .sectionp2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &__img {
+            padding: 0;
+            margin: 0;
+        }
+    }
+
+    .container {
+        margin: 0;
+        padding: 0;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50% 50%;
+    }
+}

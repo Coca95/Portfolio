@@ -1,0 +1,28 @@
+:root {
+    --thickness: 6px;
+    --grid-size: 19rem;
+    --transition: .25s all ease;
+    --color1: #142B3D;
+    --color2: #FFEBD6;
+    --color3: #F06449;
+    --white: #fff;
+    --black: #000;
+
+}
+
+.dark-theme {
+    --color1: #FFEBD6;
+    --color2: #142B3D;
+    --color3: #F06449;
+    --white: #000;
+    --black: #fff;
+}
+
+html {
+    font-family: "Roboto", sans-serif;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}

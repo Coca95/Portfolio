@@ -1,0 +1,27 @@
+@import "external/flickity";
+@import "components/reset";
+@import "utils/navbar";
+@import "templates/home";
+@import "components/variables";
+@import "templates/skills";
+@import "templates/project";
+@import "templates/contact";
+@import "templates/_work";
+
+
+//font-family
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;700&display=swap');
+
+html {
+    font-size: 16px;
+
+    @media (min-width: 400px) {
+        font-size: 14px;
+    }
+
+    @media (min-width: 800px) {
+        font-size: 18px;
+
+    }
+}
