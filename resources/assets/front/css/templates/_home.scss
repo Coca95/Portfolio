@@ -2,8 +2,6 @@
     height: 100vh;
     display: flex;
     background-color: var(--color1);
-    //align-items: center;
-    //padding-top: 5rem;
 }
 
 .xo {
@@ -25,6 +23,7 @@
     background-image: url('../../../../../public/assets/front/img/XO-Back.jpeg');
     background-size: 90vh;
     opacity: 0.05;
+    background-attachment: fixed
 }
 
 .section {
@@ -45,7 +44,7 @@
         display: flex;
         align-items: flex-end;
         opacity: 0;
-        animation: fadeInLeft 1s ease-in-out 2.25s forwards;
+        animation: fadeInLeft 1s ease-in-out 2.5s forwards;
     }
 
     &__about {
@@ -92,6 +91,7 @@
         &:first-child {
             font-size: 2.5rem;
             text-align: left;
+            padding-top: 0.75rem;
         }
 
         &:nth-of-type(2) {
@@ -100,6 +100,7 @@
 
         &:last-child {
             text-align: right;
+            padding-bottom: 0.75rem;
         }
 
         &:last-child::after {

@@ -29,7 +29,7 @@
     /*float: left;*/
     padding-top: 1rem;
     max-width: 400px;
-    font-family: 'Lato';
+    font-family: 'Roboto';
     font-weight: 400;
     margin-right: 4rem;
 }
@@ -46,15 +46,6 @@ textarea {
     letter-spacing: 1px;
 }
 
-.send-button {
-    margin-top: 15px;
-    height: 34px;
-    width: 400px;
-    overflow: hidden;
-    transition: all .2s ease-in-out;
-    border-radius: 10px;
-
-}
 
 .alt-send-button {
     width: 400px;
@@ -156,20 +147,6 @@ textarea {
     color: var(--white);
     background-color: var(--black);
     cursor: pointer;
-    transition: all .2s ease-in-out;
-}
-
-.social-media-list li:after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 60px;
-    height: 60px;
-    line-height: 60px;
-    border-radius: 50%;
-    opacity: 0;
-    box-shadow: 0 0 0 1px var(--white);
     transition: all .2s ease-in-out;
 }
 
