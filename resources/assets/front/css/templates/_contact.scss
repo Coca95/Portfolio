@@ -257,10 +257,37 @@ hr {
 @media screen and (max-width: 575.98px) {
     .--contact {
         padding: 0;
-        height: 130vh;
+        height: 165vh;
+    }
+
+    .form-horizontal {
+        width: 250px;
+        padding: 0%;
     }
 
     .send-button {
-        width: 99%;
+        width: 250px;
     }
+
+    .alt-send-button {
+        width: 250px;
+    }
+
+    .direct-contact-container {
+        margin-top: 60px;
+        max-width: 260px;
+    }
+
+    .place {
+        margin-left: 10px;
+    }
+
+    .phone {
+        margin-left: 10px;
+    }
+
+    .gmail {
+        margin-left: 10px;
+    }
+
 }
