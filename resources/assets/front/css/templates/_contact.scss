@@ -1,5 +1,5 @@
 .--contact {
-    height: 100vh;
+    min-height: 100vh;
     background-color: var(--color2);
     padding-top: 5rem;
 }
@@ -49,7 +49,7 @@ textarea {
 
 .alt-send-button {
     width: 400px;
-    height: 34px;
+    min-height: 34px;
     transition: all .2s ease-in-out;
     background-color: var(--black);
 }
@@ -139,7 +139,7 @@ textarea {
     position: relative;
     justify-content: center;
     align-items: center;
-    height: 60px;
+    min-height: 60px;
     width: 60px;
     margin: 10px 3px;
     line-height: 60px;
@@ -178,7 +178,7 @@ hr {
 @media screen and (max-width: 991.98px) {
     .--contact {
         padding: 0;
-        height: 160vh;
+        min-height: 160vh;
     }
 
     .contact-wrapper {
@@ -204,7 +204,7 @@ hr {
 
     .social-media-list li:after {
         width: 60px;
-        height: 60px;
+        min-height: 60px;
         line-height: 60px;
     }
 }
@@ -240,7 +240,7 @@ hr {
     }
 
     .social-media-list li {
-        height: 55px;
+        min-height: 55px;
         width: 55px;
         line-height: 55px;
         font-size: 2rem;
@@ -257,7 +257,7 @@ hr {
 @media screen and (max-width: 575.98px) {
     .--contact {
         padding: 0;
-        height: 165vh;
+        min-height: 165vh;
     }
 
     .form-horizontal {
