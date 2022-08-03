@@ -58,7 +58,7 @@
 .container-card .card-project {
     position: relative;
     max-width: 350px;
-    min-height: 200px;
+    height: 200px;
     background-color: var(--white);
     margin: 30px 10px;
     padding: 20px 15px;
@@ -71,14 +71,14 @@
 }
 
 .container-card .card-project:hover {
-    min-height: 360px;
+    height: 360px;
 }
 
 
 .container-card .card-project .image-card {
     position: relative;
     width: 260px;
-    min-height: 260px;
+    height: 260px;
     margin: 0rem 1.5rem;
     border-radius: 15px;
 
@@ -91,7 +91,7 @@
 .container-card .card-project .image-card .card-img {
     max-width: 100%;
     border-radius: 15px;
-    min-height: 240px;
+    height: 240px;
 }
 
 .container-card .card-project .content-card {
